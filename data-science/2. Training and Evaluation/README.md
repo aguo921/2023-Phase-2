@@ -132,10 +132,10 @@ For each task, we will be making sure that you have met the criteria below.
   - [x] You have chosen an appropriate algorithm for each dataset
 - [ ] Train and test a model
   - [x] You have trained and tested your models appropriately
-  - [ ] You have reported the accuracy of your models on the training and test sets
-  - [ ] You have printed a simple metric for each model's predictions and/or drawn a graph for linear regression
+  - [x] You have reported the accuracy of your models on the training and test sets
+  - [x] You have printed a simple metric for each model's predictions and/or drawn a graph for linear regression
 - [ ] Evaluate the model
-  - [ ] You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score
+  - [x] You have used evaluation metrics for each model, including (but not limited to) confusion matrix, precision, recall, F1-score
   - [ ] You have have interpreted your confusion matrices, F1-scores etc. correctly via comments inside your notebook explaining what your specific metrics mean
   - [ ] You have graphically evaluated the performance of each model using ROC curves or otherwise
 - [ ] Summary

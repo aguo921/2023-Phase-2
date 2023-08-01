@@ -7,8 +7,7 @@ import os
 import argparse
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score, roc_curve
 from sklearn.preprocessing import LabelBinarizer
 
 # Get the experiment run context
@@ -22,7 +21,7 @@ reg = args.reg
 
 # load the market segmentation dataset
 print("Loading Data...")
-market_segmentation = pd.read_csv('market_segmentation.csv')
+market_segmentation = pd.read_csv('market_segmentation_interaction.csv')
 
 # Separate features and labels
 X, y = market_segmentation.drop(columns="Segmentation"), market_segmentation.Segmentation
@@ -30,13 +29,10 @@ X, y = market_segmentation.drop(columns="Segmentation"), market_segmentation.Seg
 # Split data into training set and test set
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
 
-# Set regularization hyperparameter
-reg = 0.01
-
 # Train a logistic regression model
 print('Training a logistic regression model with regularization rate of', reg)
 run.log('Regularization Rate',  np.float(reg))
-model = LogisticRegression(C=1/reg, solver="liblinear").fit(X_train, y_train)
+model = LogisticRegression(C=1/reg).fit(X_train, y_train)
 
 # calculate accuracy
 y_hat = model.predict(X_test)
@@ -56,6 +52,6 @@ for class_of_interest in ["A", "B", "C", "D"]:
 
 # Save the trained model in the outputs folder
 os.makedirs('outputs', exist_ok=True)
-joblib.dump(value=model, filename='outputs/model.pkl')
+joblib.dump(value=model, filename='outputs/lg-model.pkl')
 
 run.complete()

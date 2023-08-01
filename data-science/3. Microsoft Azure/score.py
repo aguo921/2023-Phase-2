@@ -7,7 +7,7 @@ classes = {"A": "A", "B": "B", "C": "C", "D": "D"}
 def init():
     # Loads the model
     global model
-    model_path = "../2. Training and Evaluation/outputs/lg-model.pkl"
+    model_path = "lg-model.pkl"
     full_model_path = os.path.join(os.getenv("AZUREML_MODEL_DIR"), model_path)
     model = joblib.load(full_model_path)
 

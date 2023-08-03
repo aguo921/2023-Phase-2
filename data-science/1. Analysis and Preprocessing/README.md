@@ -89,9 +89,9 @@ For each task, we will be making sure that you have met the criteria below.
   - [x] You have provided some reasoning or justification for each step you have taken to clean the data
 - [x] Identify correlated variables
   - [x] You have shown the correlation between variables using a correlation matrix, heatmap, or otherwise
-- [ ] Summary
-  - [ ] You have summarised what you have found during EDA
-  - [ ] You have concisely described the preprocessing steps you have taken for each of your chosen datasets
+- [x] Summary
+  - [x] You have summarised what you have found during EDA
+  - [x] You have concisely described the preprocessing steps you have taken for each of your chosen datasets
 
 2. Presentation
    - [ ] Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did
@@ -119,9 +119,9 @@ For each task, we will be making sure that you have met the criteria below.
   - [x] You have provided some reasoning or justification for each step you have taken to clean the data
 - [x] Identify correlated variables
   - [x] You have shown the correlation between variables using a correlation matrix, heatmap, or otherwise
-- [ ] Summary
-  - [ ] You have summarised what you have found during EDA
-  - [ ] You have concisely described the preprocessing steps you have taken for each of your chosen datasets
+- [x] Summary
+  - [x] You have summarised what you have found during EDA
+  - [x] You have concisely described the preprocessing steps you have taken for each of your chosen datasets
 
 2. Presentation
    - [ ] Your notebook/s and the code within them must be well-commented so that someone looking at your notebook/s for the first time can easily understand and follow along with what you did
